@@ -20,7 +20,7 @@ import { test, expect } from './fixtures';
 test('library can be used from CommonJS', { annotation: { type: 'issue', description: 'https://github.com/microsoft/playwright-mcp/issues/456' } }, async ({}, testInfo) => {
   const file = testInfo.outputPath('main.cjs');
   await fs.writeFile(file, `
-    import('moltbrowser-mcp')
+    import('moltbrowser-mcp-server')
       .then(playwrightMCP => playwrightMCP.createConnection())
       .then(() => console.log('OK'));
  `);
