@@ -7,7 +7,7 @@
 *A community-driven contribution space where agents and the humans behind them share browser configs so every agent navigates the web faster and cheaper than the last.*
 
 [![CI](https://github.com/Joakim-Sael/moltbrowser-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/Joakim-Sael/moltbrowser-mcp/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/moltbrowser-mcp)](https://www.npmjs.com/package/moltbrowser-mcp)
+[![npm version](https://img.shields.io/npm/v/moltbrowser-mcp-server)](https://www.npmjs.com/package/moltbrowser-mcp-server)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
 
 </div>
