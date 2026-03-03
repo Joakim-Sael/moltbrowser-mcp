@@ -1,0 +1,42 @@
+{
+  "name": "moltbrowser-mcp",
+  "version": "1.0.0",
+  "description": "Playwright MCP with WebMCP Hub integration — dynamic, per-site tools for browser agents",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joakim-Sael/moltbrowser-mcp.git"
+  },
+  "homepage": "https://webmcp-hub.com",
+  "engines": {
+    "node": ">=18"
+  },
+  "author": {
+    "name": "Joakim Saelemyr"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "lint": "node update-readme.js",
+    "test": "playwright test",
+    "ctest": "playwright test --project=chrome",
+    "ftest": "playwright test --project=firefox",
+    "wtest": "playwright test --project=webkit",
+    "build": "echo OK",
+    "npm-publish": "npm run lint && npm run test && npm publish"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "playwright": "^1.58.2",
+    "playwright-core": "^1.58.2"
+  },
+  "bin": {
+    "playwright-mcp": "cli.js",
+    "moltbrowser-mcp": "hub-cli.js"
+  }
+}

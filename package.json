@@ -1,0 +1,28 @@
+{
+  "name": "moltbrowser-mcp-internal",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joakim-Sael/moltbrowser-mcp.git"
+  },
+  "homepage": "https://webmcp-hub.com",
+  "author": {
+    "name": "Joakim Saelemyr"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "lint": "npm run lint --workspaces",
+    "test": "npm run test --workspaces",
+    "build": "npm run build --workspaces",
+    "bump": "npm version --workspaces --no-git-tag-version"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.2",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^24.3.0"
+  }
+}

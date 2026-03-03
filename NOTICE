@@ -1,0 +1,12 @@
+moltbrowser-mcp
+Copyright (c) Joakim Saelemyr
+
+This product includes software developed by Microsoft Corporation.
+
+Playwright MCP (https://github.com/microsoft/playwright-mcp)
+Copyright (c) Microsoft Corporation
+Licensed under the Apache 2.0 License (https://www.apache.org/licenses/LICENSE-2.0)
+
+The following files are derived from or copied from the Playwright MCP project:
+  cli.js, index.js, index.d.ts, config.d.ts, update-readme.js,
+  playwright.config.ts, and files under tests/

@@ -1,0 +1,8 @@
+**/*
+!README.md
+!LICENSE
+!cli.js
+!hub-cli.js
+!index.*
+!config.d.ts
+!src/**/*.js
