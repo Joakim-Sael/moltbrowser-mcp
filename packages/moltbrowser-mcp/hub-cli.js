@@ -6,7 +6,7 @@
  * with WebMCP Hub integration for dynamic, per-site tools.
  *
  * Usage:
- *   npx moltbrowser-mcp [options]
+ *   npx moltbrowser-mcp-server [options]
  *
  * Hub options:
  *   --hub-url=<url>        Override hub URL (default: https://webmcp-hub.com)
