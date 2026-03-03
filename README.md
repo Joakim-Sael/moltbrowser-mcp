@@ -27,7 +27,7 @@ MoltBrowser-MCP fixes that. When an agent lands on x.com it gets `hub_post-tweet
   "mcpServers": {
     "moltbrowser-mcp": {
       "command": "npx",
-      "args": ["moltbrowser-mcp"],
+      "args": ["moltbrowser-mcp-server"],
       "env": {
         "HUB_API_KEY": "whub_your_api_key"
       }
@@ -76,7 +76,8 @@ These tools are always available when hub integration is enabled:
 | `contribute_delete-tool` | Delete a tool from a hub config (requires `HUB_API_KEY`) |
 | `contribute_vote-on-tool` | Upvote or downvote a tool to signal quality (requires `HUB_API_KEY`) |
 
-### Configuration
+<details>
+<summary>Configuration</summary>
 
 All standard browser automation options are supported:
 
@@ -129,6 +130,8 @@ All standard browser automation options are supported:
 
 <!--- End of options generated section -->
 
+</details>
+
 <details>
 <summary><b>Advanced configuration</b></summary>
 
@@ -165,7 +168,7 @@ state [here](https://playwright.dev/docs/auth).
     "playwright": {
       "command": "npx",
       "args": [
-        "moltbrowser-mcp",
+        "moltbrowser-mcp-server",
         "--isolated",
         "--storage-state={path/to/storage.json}"
       ]
@@ -209,7 +212,7 @@ The server can be configured using a JSON configuration file. You can specify th
 using the `--config` command line option:
 
 ```bash
-npx moltbrowser-mcp --config path/to/config.json
+npx moltbrowser-mcp-server --config path/to/config.json
 ```
 
 <details>
@@ -439,7 +442,7 @@ When running headed browser on system w/o display or from worker processes of th
 run the MCP server from environment with the DISPLAY and pass the `--port` flag to enable HTTP transport.
 
 ```bash
-npx moltbrowser-mcp --port 8931
+npx moltbrowser-mcp-server --port 8931
 ```
 
 And then in MCP client config, set the `url` to the HTTP endpoint:
@@ -462,7 +465,7 @@ And then in MCP client config, set the `url` to the HTTP endpoint:
 ```js
 import http from 'http';
 
-import { createConnection } from 'moltbrowser-mcp';
+import { createConnection } from 'moltbrowser-mcp-server';
 import { SSEServerTransport } from '@modelcontextprotocol/sdk/server/sse.js';
 
 http.createServer(async (req, res) => {
