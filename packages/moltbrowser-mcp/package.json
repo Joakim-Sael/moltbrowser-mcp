@@ -1,6 +1,6 @@
 {
   "name": "moltbrowser-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Playwright MCP with WebMCP Hub integration — dynamic, per-site tools for browser agents",
   "repository": {
     "type": "git",
