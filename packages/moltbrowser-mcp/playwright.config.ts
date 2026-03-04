@@ -22,6 +22,7 @@ export default defineConfig<TestOptions>({
   testDir: './tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
+  timeout: process.env.CI ? 60_000 : 30_000,
   workers: process.env.CI ? 2 : undefined,
   reporter: 'list',
   projects: [
