@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "minimist": "^1.2.5",
-    "moltbrowser-mcp-server": "*"
+    "moltbrowser-mcp-server": "^1.2.0"
   },
   "peerDependencies": {
     "@playwright/cli": ">=0.1.0",

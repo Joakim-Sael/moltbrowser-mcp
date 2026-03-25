@@ -19,8 +19,13 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run lint --workspace=packages/moltbrowser-mcp
-      - name: Publish to npm
+      - name: Publish moltbrowser-mcp-server
         run: npm publish
         working-directory: ./packages/moltbrowser-mcp
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Publish moltbrowser-cli
+        run: npm publish
+        working-directory: ./packages/moltbrowser-cli
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
